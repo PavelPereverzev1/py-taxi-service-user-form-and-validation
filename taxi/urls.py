@@ -66,7 +66,7 @@ urlpatterns = [
         name="car-delete"
     ),
     path(
-        "cars/<int:pk>/toogle-assign/",
+        "cars/<int:pk>/toggle-assign/",
         ToggleCarAssignView.as_view(),
         name="toggle-car-assign",
     ),

@@ -31,7 +31,8 @@ class DriverCreateForm(UserCreationForm):
         )
 
         def clean_license_number(self):
-            DriverLicenseUpdateForm.clean_license_number(self)
+            license_number = DriverLicenseUpdateForm.clean_license_number(self)
+            return license_number
 
 
 class CarForm(forms.ModelForm):
